@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mi página web</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="barra">
+      <h1>Mi página web</h1>
+      <button id="btn-tema" type="button">Cambiar tema</button>
+    </div>
+    <nav>
+      <a href="#texto">Texto</a>
+      <a href="#listas">Listas</a>
+      <a href="#tabla">Tabla</a>
+      <a href="#multimedia">Multimedia</a>
+      <a href="#formulario">Formulario</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <div class="contenedor">
+    <main>
+      <section id="texto">
+        <h2>Elementos de texto</h2>
+        <p>Este es un párrafo con <strong>texto en negrita</strong>, <em>texto en cursiva</em> y <mark>texto resaltado</mark>.</p>
+        <blockquote>“Aprender a programar es aprender a resolver problemas.”</blockquote>
+        <p>Enlace externo: <a href="https://developer.mozilla.org/es/" target="_blank" rel="noopener">MDN Web Docs</a></p>
+      </section>
+
+      <section id="listas">
+        <h2>Listas</h2>
+        <h3>Lista no ordenada</h3>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+        </ul>
+        <h3>Lista ordenada</h3>
+        <ol>
+          <li>Crear</li>
+          <li>Escribir</li>
+          <li>Publicar</li>
+        </ol>
+        <h3>Lista de definiciones</h3>
+        <dl>
+          <dt>HTML</dt><dd>Lenguaje que define la estructura de la página.</dd>
+          <dt>CSS</dt><dd>Lenguaje que define el diseño y los colores.</dd>
+        </dl>
+      </section>
+
+      <section id="tabla">
+        <h2>Tabla</h2>
+        <table>
+          <thead>
+            <tr><th>Tecnología</th><th>Función</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>HTML</td><td>Estructura</td></tr>
+            <tr><td>CSS</td><td>Diseño</td></tr>
+            <tr><td>JavaScript</td><td>Interactividad</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="multimedia">
+        <h2>Multimedia</h2>
+        <div class="medios">
+          <figure>
+            <img src="foto.jpg" alt="Dos personas abrazándose en un vestidor">
+            <figcaption>Pie de foto</figcaption>
+          </figure>
+          <video controls width="320" preload="metadata">
+            <source src="video.mp4" type="video/mp4">
+            Tu navegador no soporta video.
+          </video>
+        </div>
+      </section>
+
+      <section id="formulario">
+        <h2>Formulario</h2>
+        <form id="form">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre" required>
+
+          <label for="correo">Correo</label>
+          <input type="email" id="correo" name="correo" required>
+
+          <label for="pais">País</label>
+          <select id="pais" name="pais" required>
+            <option value="">Selecciona...</option>
+            <option>México</option>
+            <option>Colombia</option>
+            <option>España</option>
+            <option>Argentina</option>
+            <option>Otro</option>
+          </select>
+
+          <button type="submit">Enviar</button>
+          <p id="mensaje" role="status"></p>
+        </form>
+      </section>
+
+      <section id="contacto">
+        <h2>Contacto</h2>
+        <p>Escríbeme a <a href="mailto:tucorreo@ejemplo.com">tucorreo@ejemplo.com</a></p>
+      </section>
+    </main>
+
+    <aside>
+      <h2>Barra lateral</h2>
+      <p>Contenido relacionado</p>
+      <details>
+        <summary>Desplegable</summary>
+        <p>Aquí va más contenido que se muestra al hacer clic.</p>
+      </details>
+    </aside>
+  </div>
+
+  <footer>© 2026 Tu Nombre. Hecho con HTML, CSS y JavaScript.</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
